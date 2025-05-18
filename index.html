@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1>DashBoard</h1>
+      <span class="time">12:00 AM</span>
+    </div>
+
+    <div class="main-container">
+      <div class="side-boxes">
+        <div class="box lucro">
+          <div class="box-header">Últimas 24h</div>
+          <p><strong>Lucro:</strong></p>
+          <p class="lucro-valor">+R$0,00</p>
+        </div>
+        <div class="box perda">
+          <div class="box-header">Últimas 24h</div>
+          <p><strong>Perda:</strong></p>
+          <p class="perda-valor">-R$0,00</p>
+        </div>
+      </div>
+
+      <div class="center-section">
+        <h2>SEU VALOR TOTAL</h2>
+        <p class="valor">R$ 0,00</p>
+        <p class="btc">+0,0 BTC</p>
+        <hr />
+        <h2>VALOR BITCOIN</h2>
+        <p class="valor">$ 0,00</p>
+      </div>
+
+      <div class="buttons">
+        <button class="btn green">Comprar BTC</button>
+        <div id="trade_market">
+          <p class="market">Valor a Mercado</p>
+          <button id="change">
+            <img
+              src="istockphoto-1163311446-612x612.jpg"
+              alt="imagem clicavel"
+            />
+          </button>
+        </div>
+        <button class="btn red">Vender BTC</button>
+        <input
+          id="valor_inserir"
+          type="number"
+          type="number"
+          min="0"
+          step="1"
+          placeholder="Insira um Valor"
+          id="meuInput"
+          name="meuInput"
+          onkeypress="return (event.charCode >= 48 && event.charCode <= 57)"
+          oninput="if(this.value < 0) this.value = 0;"
+        />
+      </div>
+    </div>
+
+    <div class="transacoes">
+      <h3>TRANSAÇÕES RECENTES</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Data:</th>
+            <th>Tipo:</th>
+            <th>Criptomoeda:</th>
+            <th>Quantidade:</th>
+            <th>Preço:</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>00/00/0000</td>
+            <td>undefined</td>
+            <td>undefined</td>
+            <td>0</td>
+            <td>$ 0,00</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
